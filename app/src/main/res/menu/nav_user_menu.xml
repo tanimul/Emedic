@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_appointment"
+        android:title="@string/appointments" />
+    <item
+        android:id="@+id/nav_ambulance"
+        android:title="@string/ambulance" />
+
+    <item android:title="Profile">
+        <menu>
+            <item android:id="@+id/home_nav_profile"
+                android:title="profile" />
+            <item android:id="@+id/home_nav_logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/hone_nav_aboutus"
+                android:title="About Us" />
+            <item android:id="@+id/home_nav_rateApp"
+                android:title="Rate App" />
+        </menu>
+    </item>
+
+</menu>

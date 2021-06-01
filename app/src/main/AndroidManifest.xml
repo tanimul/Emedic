@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emadic">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EMadic"
+        android:usesCleartextTraffic="false">
+        <activity android:name=".activity.ActivityAbout"></activity>
+        <activity android:name=".activity.Activity_hospital_list" />
+        <activity android:name=".activity.Activity_Edit_profile" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".activity.ActivityMapWithDeriction" />
+        <activity android:name=".activity.ActivityRegisteredVerificationCode" />
+        <activity android:name=".activity.ActivityHomePage" />
+        <activity android:name=".activity.ActivityNewProfile" />
+        <activity android:name=".activity.ActivityProfile" />
+        <activity android:name=".activity.ActivityMyAppointment" />
+        <activity android:name=".activity.ActivityCallAmbulance" />
+        <activity android:name=".activity.ActivityBookAppoinment" />
+        <activity android:name=".activity.ActivityDoctorList" />
+        <activity
+            android:name=".activity.ActivityRegisteredLogin"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
